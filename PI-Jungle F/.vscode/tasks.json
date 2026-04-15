@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Angular: serve (Jungle)",
+      "type": "shell",
+      "command": "npm run start",
+      "options": {
+        "cwd": "${workspaceFolder}/PI-Jungle/Front/ProjetPI4eme-newTemplate",
+        "env": {
+          "FORCE_COLOR": "1"
+        }
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": { "regexp": "^$" },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".",
+          "endsPattern": "Local:|localhost:4200|Application bundle generation complete"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Angular: npm install (Jungle)",
+      "type": "shell",
+      "command": "npm install",
+      "options": {
+        "cwd": "${workspaceFolder}/PI-Jungle/Front/ProjetPI4eme-newTemplate"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
