@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["jasmine", "node", "zone.js"]
+  },
+  "files": ["./test-setup.ts"],
+  "include": [
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+}
